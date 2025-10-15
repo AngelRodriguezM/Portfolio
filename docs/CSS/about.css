@@ -344,18 +344,18 @@ span{
     padding: 5% 6%;
   }
   .contentGrid{
-    grid-template-columns: 1fr;  /* stack */
+    grid-template-columns: 1fr; 
     gap: 4vh;
     max-width: 720px;
   }
   .textCard{
-    width: auto;                 /* drop fixed width */
-    grid-column: auto;           /* reset manual placement */
+    width: auto;                
+    grid-column: auto;          
     grid-row: auto;
     padding: 1.5rem;
   }
   .imageCard{
-    margin-right: 0;             /* remove right offset on stack */
+    margin-right: 0;             
     padding: 4%;
   }
   .imageCard img{
@@ -365,7 +365,7 @@ span{
   }
 }
 
-/* Large phones (≤576px) */
+
 @media (max-width: 576px){
   .content{
     padding: 6% 5%;
@@ -511,11 +511,11 @@ li{
   .CV h1{ margin: 3% 0; }
   .cvGrid{
     width: 100%;
-    grid-template-columns: 1fr;  /* stack cards */
+    grid-template-columns: 1fr;  
     gap: 1.25rem;
   }
   .infoCard{ padding: 1.5rem; }
-  #work, #studies{ grid-column: auto; } /* reset span */
+  #work, #studies{ grid-column: auto; } 
   .cvImg{ padding: 8%; }
   .cvImg img{ width: 68%; }
   .infoCard h3{
@@ -523,7 +523,7 @@ li{
     }
 }
 
-/* Large phones (≤576px) */
+
 @media (max-width: 576px){
   .CV{ padding: 5% 4%; }
   .cvImg{ padding: 9%; }
@@ -535,7 +535,6 @@ li{
     }
 }
 
-/* Small phones (≤400px) */
 @media (max-width: 400px){
   .CV{ padding: 6% 3.5%; 
     }

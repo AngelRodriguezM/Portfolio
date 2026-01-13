@@ -94,6 +94,11 @@ h1, h2, h3{
     
 }
 
+.navIcon{
+    
+    display: none;
+}
+
 
 
 .navbar {
@@ -269,8 +274,29 @@ h1, h2, h3{
         width: 150px;
     }
     .navbarBtn{
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
     }
+
+    .navIcon{
+        display: block;
+    }
+
+    .navbarBtn:hover{
+        letter-spacing: normal;
+        animation: popBounce 0.8s cubic-bezier(0, 1.39, 0.42, 1.65) forwards;
+        background-color: rgba(255, 92, 92, 0.232);
+    }
+
+    @keyframes popBounce {
+    0% { padding: 0.25rem 0.5rem; }
+    60% { padding: 0.25rem 2rem; }
+    100% { padding: 0.25rem 0.5rem; }
+}
 
     .navbarBtn::after{
         display: none;
